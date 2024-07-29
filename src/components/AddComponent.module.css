@@ -37,6 +37,21 @@
 ::placeholder {
     color: #2f3640;
 }
+input[type="date"]::-webkit-input-placeholder {
+    color: #2f3640;
+  }
+  
+  input[type="date"]::-moz-placeholder {
+    color: #2f3640;
+  }
+  
+  input[type="date"]:-ms-input-placeholder {
+    color: #2f3640;
+  }
+  
+  input[type="date"]:-moz-placeholder {
+    color: #2f3640;
+  }
 
 button {
     padding: 1rem;
