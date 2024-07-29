@@ -1,0 +1,198 @@
+.text {
+    font-size: 1.5rem;
+    color: #2f3640;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.tableContainer {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 3rem;
+}
+
+.tableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #2f3640;
+}
+
+.tableContainer th,
+.tableContainer td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.tableContainer thead {
+    background-color: #ecf0f1;
+}
+
+.tableContainer th {
+    font-weight: bold;
+}
+
+.tableContainer tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+.tableContainer td input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.tableContainer td span {
+    display: inline-block;
+    min-width: 200px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #ecf0f1;
+    color: #2f3640;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    transition: all 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.tableContainer td button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.tableContainer input[type="text"],
+.tableContainer input[type="date"] {
+    width: 40%;
+    padding: 0.5rem;
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    font-size: 1rem;
+    color: #2f3640;
+    margin-left: 8px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: block;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.checkbox .checkmark {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: url("./images/check-mark.png") no-repeat left;
+    transition: 0.3s all ease;
+}
+
+.checkbox input:checked+.checkmark {
+    display: block;
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.editSection button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    .tableContainer {
+        margin-top: 1rem;
+    }
+
+    .tableContainer th,
+    .tableContainer td {
+        padding: 8px 10px;
+        font-size: 0.7rem;
+    }
+
+    .tableContainer td span {
+        display: block;
+        min-width: auto;
+    }
+
+    button {
+        /* width: 100%; */
+        padding: 0.2rem 0.2rem;
+        font-size: 0.7rem;
+        display: inline-block;
+    }
+
+    .tableContainer input[type="text"],
+    .tableContainer input[type="date"] {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .editSection {
+        width: 100%;
+        height: 100vh;
+        background-color: #ecf0f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .editSection button {
+        display: block;
+        margin-top: 1rem;
+    }
+    .edit img {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+}
+@media (max-width: 480px) {
+    .edit {
+        width: 14px;
+        height: 14px;
+        background: none;
+        box-shadow: none;
+    }
+    .edit img {
+        width: 100%;
+        height: 100%;
+        margin-right: 5px;
+    }
+    .text {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .tableContainer th,
+    .tableContainer td {
+        padding: 4px 8px;
+        font-size: 0.6rem;
+    }
+}
