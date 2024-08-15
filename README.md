@@ -2,6 +2,14 @@
 
 A simple and efficient Todo App built with React. This app allows users to add, edit, delete, and mark tasks as completed. The app uses local storage to persist tasks across sessions.
 
+## Table of Contents
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Acknowledgments](#acknowledgments)
+
 ## Features
 
 - **Add Tasks**: Users can add new tasks with a title and optional due date.
