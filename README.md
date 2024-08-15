@@ -33,6 +33,10 @@ A simple and efficient Todo App built with React. This app allows users to add, 
 - **Vercel:** Deployment platform for hosting the application with ease
 
 ## Installation
+## Installation
+
+### Prerequisites
+- Node.js and npm installed on your local machine.
 
 1. Clone the repository:
 
